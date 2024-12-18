@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.PowerPelmen = new System.Windows.Forms.TextBox();
+            this.PelmenTillDay = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Result1 = new System.Windows.Forms.TextBox();
-            this.PelmenTillDay = new System.Windows.Forms.TextBox();
-            this.PowerPelmen = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Power = new System.Windows.Forms.TextBox();
             this.massProcent = new System.Windows.Forms.TextBox();
@@ -91,6 +91,22 @@
             this.panel1.Size = new System.Drawing.Size(270, 175);
             this.panel1.TabIndex = 9;
             // 
+            // PowerPelmen
+            // 
+            this.PowerPelmen.Location = new System.Drawing.Point(6, 82);
+            this.PowerPelmen.Name = "PowerPelmen";
+            this.PowerPelmen.Size = new System.Drawing.Size(100, 20);
+            this.PowerPelmen.TabIndex = 15;
+            this.PowerPelmen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PowerPelmen_KeyPress);
+            // 
+            // PelmenTillDay
+            // 
+            this.PelmenTillDay.Location = new System.Drawing.Point(6, 43);
+            this.PelmenTillDay.Name = "PelmenTillDay";
+            this.PelmenTillDay.Size = new System.Drawing.Size(100, 20);
+            this.PelmenTillDay.TabIndex = 14;
+            this.PelmenTillDay.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PelmenTillDay_KeyPress);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(6, 135);
@@ -128,20 +144,6 @@
             this.Result1.Size = new System.Drawing.Size(100, 20);
             this.Result1.TabIndex = 10;
             // 
-            // PelmenTillDay
-            // 
-            this.PelmenTillDay.Location = new System.Drawing.Point(6, 43);
-            this.PelmenTillDay.Name = "PelmenTillDay";
-            this.PelmenTillDay.Size = new System.Drawing.Size(100, 20);
-            this.PelmenTillDay.TabIndex = 14;
-            // 
-            // PowerPelmen
-            // 
-            this.PowerPelmen.Location = new System.Drawing.Point(6, 82);
-            this.PowerPelmen.Name = "PowerPelmen";
-            this.PowerPelmen.Size = new System.Drawing.Size(100, 20);
-            this.PowerPelmen.TabIndex = 15;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.Power);
@@ -163,6 +165,7 @@
             this.Power.Name = "Power";
             this.Power.Size = new System.Drawing.Size(100, 20);
             this.Power.TabIndex = 15;
+            this.Power.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Power_KeyPress);
             // 
             // massProcent
             // 
@@ -170,6 +173,7 @@
             this.massProcent.Name = "massProcent";
             this.massProcent.Size = new System.Drawing.Size(100, 20);
             this.massProcent.TabIndex = 14;
+            this.massProcent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.massProcent_KeyPress);
             // 
             // button2
             // 
@@ -245,6 +249,7 @@
             this.CutterPower.Name = "CutterPower";
             this.CutterPower.Size = new System.Drawing.Size(100, 20);
             this.CutterPower.TabIndex = 14;
+            this.CutterPower.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CutterPower_KeyPress);
             // 
             // button3
             // 
